@@ -8,7 +8,7 @@ echo "> ensure gitbook-summary was installed"
 book sm --version 2>/dev/null || npm install -g gitbook-summary
 
 echo "> delete old SUMMARY.md and _book/"
-rm -rf SUMMARY.md _book 2>/dev/null
+rm -rf SUMMARY.md _book dist/hyperform 2>/dev/null
 
 echo "> generate new SUMMARY.md"
 book sm
