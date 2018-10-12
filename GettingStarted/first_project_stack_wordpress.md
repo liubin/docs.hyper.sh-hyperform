@@ -62,3 +62,6 @@ wordpress           wordpress           us-east-2b          i-09f96224cd8f799a9 
 ```
 
 
+## Architecture of 'wordpress' Stack
+
+![](aws-diagram-for-wordpress.png)
