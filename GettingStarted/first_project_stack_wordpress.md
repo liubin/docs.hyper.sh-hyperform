@@ -1,6 +1,6 @@
 # Deploy Stack 'wordpress'
 
-We will deploy a Wordpress+MySQL stack with ELB/ASG/Volume/Secrets, which is much more complicate than stack 'nginx'.
+Now let's deploy a Wordpress+MySQL stack with ELB/ASG/Volume/Secrets, which is much more complicate than stack 'nginx'.
 
 
 ## Prepare
@@ -12,13 +12,13 @@ Secrets file:
 
 Cert files: 
 ```
-wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.crt
-wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.key
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.crt
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.key
 ```
 
 Compose File:
 ```
-wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/wordpress.yaml
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/wordpress.yaml
 ```
 
 
@@ -47,9 +47,11 @@ STACK               NAME                REPLICAS/SPOT       IMAGE               
 nginx               nginx               1/0                 nginx:alpine                                                                              
 wordpress           db                  1/0                 mysql:5.7                                                                                 
 wordpress           wordpress           2/1                 wordpress:latest    my-first-project-wordpress-lb-451438781.us-east-2.elb.amazonaws.com   443,80
+```
 
-Now you can access the wordpress in a web browser via 'DNSNAME' (In this demo it's my-first-project-wordpress-lb-451438781.us-east-2.elb.amazonaws.com).
+Now you can access the wordpress in a web browser via 'DNSNAME' (In this demo it's `my-first-project-wordpress-lb-451438781.us-east-2.elb.amazonaws.com`).
 
+```
 # list containers
 [root@centos my-first-project]# hf ps
 STACK               SERVICE             ZONE                INSTANCE              PUBLIC IP           CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES

@@ -24,7 +24,7 @@
 INFO[0000] Saved aws profile "default".
 ```
 
-To view the config, just run 'hf config aws show' or 'cat .hyperform/aws'.
+To view the config, just run `hf config aws show` or `cat .hyperform/aws`.
 
 
 ## Init cloud environment for project
