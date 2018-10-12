@@ -1,6 +1,7 @@
 {
     "title": "Hyperform",
-    "catalog": "GettingStarted, Reference, Tutorial, FAQ, version.md",
+    "catalog": "01-GettingStarted, 02-Feature, 03-Reference, 04-FAQ, 05-version.md",
     "ignores": [],
-    "unchanged": []
+    "unchanged": [],
+    "sortedBy": "-"
 }
