@@ -1,13 +1,13 @@
 # Summary
 
-* [Introduction](Overview/index.md)
-  * [What is Hyperform](Overview/what_is_hyperform.md)
-  * [Design](Overview/design.md)
-
-* [Getting Started](GettingStarted/index.md)
-  * [Prerequisites](GettingStarted/Prerequisites.md)
+* [Getting Started](GettingStarted/prerequisites.md)
+  * [Prerequisites](GettingStarted/prerequisites.md)
   * [Install CLI](GettingStarted/install.md)
-  * [First Project](GettingStarted/first_project.md)
+  * [First Project](GettingStarted/first_project_init.md)
+    * [Init Project](GettingStarted/first_project_init.md)
+    * [Deploy Stack 'nginx'](GettingStarted/first_project_stack_nginx.md)
+    * [Deploy Stack 'wordpress'](GettingStarted/first_project_stack_wordpress.md)
+    * [Destroy Project](GettingStarted/first_project_destroy.md)
 
 * [Features](Feature/index.md)
 
