@@ -1,0 +1,104 @@
+version: '3.8'
+
+stack: wordpress
+
+services:
+   db:
+     image: mysql:5.7
+     deploy:
+       size: t2.micro
+       zone:
+         - ${ZONE}
+       restart_policy:
+         condition: on-failure
+     ports:
+       - 3306:3306
+     volumes:
+       - mysql-data:/var/lib/mysql
+     environment:
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root_password
+       MYSQL_PASSWORD_FILE: /run/secrets/wp_db_password
+     secrets:
+       - wp_db_password
+       - mysql_root_password
+
+
+   wordpress:
+     deploy:
+       replicas: 2
+       preemptible: 1
+       public: true
+       size: t2.micro
+       restart_policy:
+         condition: on-failure
+       labels:
+         label-1: "a"
+         label-2: "b"
+     image: wordpress:latest
+     ports:
+       - "80:80"
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD_FILE: /run/secrets/wp_db_password
+     secrets:
+       - wp_db_password
+
+
+secrets:
+  wp_db_password:
+    file: ./wp_db_password.txt
+  mysql_root_password:
+    file: ./mysql_root_password.txt
+
+
+volumes:
+  mysql-data:
+    provider: aws
+    size: 10
+    zone: ${ZONE}
+    options:
+      iops: 100
+      type: io1
+    tags:
+      Tag1: abc
+      Tag2: def
+
+
+aws_elb:
+  lb:
+    services:
+      wordpress:
+        cross_zone_load_balancing: true
+        idle_timeout: 400
+        connection_draining: true
+        connection_draining_timeout: 500
+
+        tags:
+          Tag1: abc
+          Tag2: def
+
+        access_logs:
+          interval: "5"
+          enabled: true
+
+        health_check:
+          healthy_threshold: 5
+          unhealthy_threshold: 5
+          timeout: 5
+          target: HTTP:80/readme.html
+          interval: 60
+
+        listeners:
+        - instance_port: 80
+          instance_protocol: HTTP
+          lb_port: 443
+          lb_protocol: HTTPS
+          ssl_certificate_body_file: ./example.io.crt
+          ssl_private_key_file: ./example.io.key
+        - instance_port: 80
+          instance_protocol: HTTP
+          lb_port: 80
+          lb_protocol: HTTP

@@ -8,20 +8,18 @@ Hyperform currently provides CLI builds for Linux and Mac.
 
 ## Install on Mac
 
-    $ curl -O https://hyper-install.s3.amazonaws.com/hyperform-mac.bin.zip
-    $ unzip hyperform-mac.bin.zip
-    $ ./hyperform --help
-
-or
-
-    $ brew install hyperform
+    $ wget https://hyper-install.s3.amazonaws.com/hf-darwin-amd64.zip
+    $ unzip hf-darwin-amd64.zip
+    $ sudo cp hf /usr/local/bin/
+    $ hf --help
 
 
 ## Install on Linux x86_64
 
-    $ wget https://hyper-install.s3.amazonaws.com/hyperform-linux-x86_64.tar.gz
-    $ tar xzf hyperform-linux-x86_64.tar.gz
-    $ ./hyperform --help
+    $ wget https://hyper-install.s3.amazonaws.com/hf-linux-amd64.tar.gz
+    $ tar xzvf hf-linux-amd64.tar.gz
+    $ sudo cp hf /usr/local/bin/
+    $ hf --help
 
 
 
