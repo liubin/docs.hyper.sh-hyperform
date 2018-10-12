@@ -1,20 +1,16 @@
-# Summary
+# Hyperform
 
-* [Getting Started](GettingStarted/index.md)
-  * [Prerequisites](GettingStarted/prerequisites.md)
-  * [Install CLI](GettingStarted/install.md)
+- [FAQ](FAQ/README.md)
+- [Getting Started](GettingStarted/README.md)
+  * [First Project Destroy](GettingStarted/first_project_destroy.md)
+  * [First Project Init](GettingStarted/first_project_init.md)
+  * [First Project Stack Nginx](GettingStarted/first_project_stack_nginx.md)
+  * [First Project Stack Wordpress](GettingStarted/first_project_stack_wordpress.md)
   * [First Project](GettingStarted/first_project.md)
-    * [Init Project](GettingStarted/first_project_init.md)
-    * [Deploy Stack 'nginx'](GettingStarted/first_project_stack_nginx.md)
-    * [Deploy Stack 'wordpress'](GettingStarted/first_project_stack_wordpress.md)
-    * [Destroy Project](GettingStarted/first_project_destroy.md)
-
-* [Features](Feature/index.md)
-
-* [Reference](Reference/index.md)
-  * [CLI](Reference/CLI/index.md)
-  * [Compose File Reference](Reference/compose_file_ref.md)
-
-* [FAQ](FAQ/index.md)
-
-* [Docs version](version.md)
+  * [Install](GettingStarted/install.md)
+  * [Prerequisites](GettingStarted/prerequisites.md)
+- [Reference](Reference/README.md)
+  - [CLI](Reference/CLI/README.md)
+  * [Compose File Ref](Reference/compose_file_ref.md)
+- [Tutorial](Tutorial/README.md)
+* [Version](version.md)
