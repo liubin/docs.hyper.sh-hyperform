@@ -1,11 +1,11 @@
 # Hyperform
 
 - [Getting Started](01-GettingStarted/README.md)
+  * [First Project](01-GettingStarted/first_project.md)
   * [First Project Destroy](01-GettingStarted/first_project_destroy.md)
   * [First Project Init](01-GettingStarted/first_project_init.md)
   * [First Project Stack Nginx](01-GettingStarted/first_project_stack_nginx.md)
   * [First Project Stack Wordpress](01-GettingStarted/first_project_stack_wordpress.md)
-  * [First Project](01-GettingStarted/first_project.md)
   * [Install](01-GettingStarted/install.md)
   * [Prerequisites](01-GettingStarted/prerequisites.md)
 - [Feature](02-Feature/README.md)
