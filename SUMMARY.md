@@ -1,9 +1,9 @@
 # Summary
 
-* [Getting Started](GettingStarted/prerequisites.md)
+* [Getting Started](GettingStarted/index.md)
   * [Prerequisites](GettingStarted/prerequisites.md)
   * [Install CLI](GettingStarted/install.md)
-  * [First Project](GettingStarted/first_project_init.md)
+  * [First Project](GettingStarted/first_project.md)
     * [Init Project](GettingStarted/first_project_init.md)
     * [Deploy Stack 'nginx'](GettingStarted/first_project_stack_nginx.md)
     * [Deploy Stack 'wordpress'](GettingStarted/first_project_stack_wordpress.md)
