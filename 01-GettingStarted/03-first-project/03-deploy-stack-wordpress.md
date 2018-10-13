@@ -10,15 +10,15 @@ Secrets file:
 [root@centos my-first-project]# echo 'dddeeefff' > wp_db_password.txt
 ```
 
-Cert files: 
+Cert files:
 ```
-[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.crt
-[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/cert/example.io.key
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/01-GettingStarted/03-first-project/cert/example.io.crt
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/01-GettingStarted/03-first-project/cert/example.io.key
 ```
 
 Compose File:
 ```
-[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/GettingStarted/wordpress.yaml
+[root@centos my-first-project]# wget https://raw.githubusercontent.com/hyperhq/docs.hyper.sh-hyperform/master/01-GettingStarted/03-first-project/wordpress.yaml
 ```
 
 

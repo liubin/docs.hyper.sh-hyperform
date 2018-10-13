@@ -14,7 +14,7 @@
 ```
 
 
-## Clean up cloud environment for project
+## Clean up cloud environment
 ```
 [root@centos my-first-project]# hf destroy --force
 ```
