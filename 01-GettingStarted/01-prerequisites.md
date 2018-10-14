@@ -2,7 +2,7 @@
 
 ## 1. AWS account and credential
 
-For now hyperform only supports AWS. 
+For now hyperform only supports AWS.
 
 Permissions needed:
 ```
@@ -57,8 +57,9 @@ Permissions needed:
                 "s3:*AccelerateConfiguration*",
 
                 "secretsmanager:Get*",
-                "secretsmanager:*Secret*"
-
+                "secretsmanager:*Secret*",
+                "secretsmanager:TagResource",
+                "secretsmanager:UntagResource"
             ],
             "Resource": "*"
         }
