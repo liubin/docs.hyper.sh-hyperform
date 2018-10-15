@@ -18,8 +18,8 @@
 [root@centos my-first-project]# hf config aws set \
                                   --access-key=$YOUR_AWS_ACCESS_KEY \
                                   --secret-key=$YOUR_AWS_SECRET_KEY \
-                                  --private-key=$PATH_TO_YOUR_SSH_PRIVATE_KEY \
-                                  --public-key=$PATH_TO_YOUR_SSH_PUBLIC_KEY \
+                                  --private-key=$PATH_TO_YOUR_SSH_PRIVATE_KEY_FILE \
+                                  --public-key=$PATH_TO_YOUR_SSH_PUBLIC_KEY_FILE \
                                   --region=$THE_AWS_REGION_YOU_CHOSE
 INFO[0000] Saved aws profile "default".
 ```
