@@ -9,6 +9,10 @@
     * [Deploy Stack Wordpress](01-GettingStarted/03-first-project/03-deploy-stack-wordpress.md)
     * [Destroy Project](01-GettingStarted/03-first-project/04-destroy-project.md)
 - [Feature](02-Feature/README.md)
+  * [Project](02-Feature/project.md)
+  * [Stack](02-Feature/stack.md)
+  * [Container](02-Feature/container.md)
+
 - [Reference](03-Reference/README.md)
   - [CLI](03-Reference/CLI/README.md)
     - [hf config](03-Reference/CLI/hf_config/hf_config.md)
