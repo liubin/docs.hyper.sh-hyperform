@@ -8,7 +8,7 @@ Hyperform currently provides CLI builds for Linux and Mac.
 
 ## Install on Mac
 
-    $ wget http://download.hyperform.sh/latest/hf-darwin-amd64.zip
+    $ wget https://download.hyperform.sh/latest/hf-darwin-amd64.zip
     $ unzip hf-darwin-amd64.zip
     $ sudo cp hf /usr/local/bin/
     $ hf --help
@@ -16,10 +16,10 @@ Hyperform currently provides CLI builds for Linux and Mac.
 
 ## Install on Linux x86_64
 
-    $ wget http://download.hyperform.sh/latest/hf-linux-amd64.tar.gz
+    $ wget https://download.hyperform.sh/latest/hf-linux-amd64.tar.gz
     $ tar xzvf hf-linux-amd64.tar.gz
     $ sudo cp hf /usr/local/bin/
     $ hf --help
 
 
-Download the previous version from [download.hyperform.sh](http://download.hyperform.sh)
+Download the previous version from [download.hyperform.sh](https://download.hyperform.sh)
