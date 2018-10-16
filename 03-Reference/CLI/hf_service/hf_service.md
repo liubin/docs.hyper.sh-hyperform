@@ -29,7 +29,7 @@ Use "hf service [command] --help" for more information about a command.
 
 ### Description
 
-Manage services in stacks.
+Manage services in stack.
 
 
 
