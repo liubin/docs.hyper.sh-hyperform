@@ -1,20 +1,23 @@
 # Destroy Project
 
 
-## Remove 'nginx' stack
+## Remove nginx stack
+
 ```
 [root@centos my-first-project]# hf stack rm nginx --force
 ```
 
 
 
-## Remove 'wordpress' stack
+## Remove wordpress stack
+
 ```
 [root@centos my-first-project]# hf stack rm wordpress --force
 ```
 
 
 ## Clean up cloud environment
+
 ```
 [root@centos my-first-project]# hf destroy --force
 ```

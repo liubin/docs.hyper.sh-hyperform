@@ -1,4 +1,11 @@
 {
+    "plugins": ["collapsible-menu", "toc"],
+    "pluginsConfig": {
+        "toc": {
+            "addClass": true,
+            "className": "toc"
+        }
+    },
     "title": "Hyperform",
     "catalog": "01-GettingStarted, 02-Feature, 03-Reference, 04-FAQ, 05-version.md",
     "ignores": [],

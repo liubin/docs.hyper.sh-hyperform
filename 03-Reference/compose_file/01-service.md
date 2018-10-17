@@ -1,11 +1,13 @@
 # Service configuration reference
 
+
 A service definition contains configuration that is applied to each container started for that service.
 
 Options specified in the Dockerfile, such as `CMD`, `EXPOSE`, `ENV`, are respected by default - you don't need to specify them again.
 
 This section contains a list of all configuration options supported by a service definition.
 
+<!-- toc -->
 
 ## command
 
