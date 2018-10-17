@@ -17,7 +17,7 @@ Available Commands:
   diff        Inspect changes to files or directories on a container's filesystem
   exec        Run a command in a running container
   help        Help about any command
-  init        Create cloud resources for project
+  init        Config for cloud and create cloud resources for project
   inspect     Return low-level information on Docker objects
   kill        Kill one or more running containers
   logs        Fetch the logs of a container
@@ -100,7 +100,7 @@ expect an integer, and they can only be specified once.
 * [hf destroy](hf_destroy.md)	 - Destroy all cloud resources for project
 * [hf diff](hf_diff.md)	 - Inspect changes to files or directories on a container's filesystem
 * [hf exec](hf_exec.md)	 - Run a command in a running container
-* [hf init](hf_init.md)	 - Create cloud resources for project
+* [hf init](hf_init.md)	 - Config for cloud and create cloud resources for project
 * [hf inspect](hf_inspect.md)	 - Return low-level information on Docker objects
 * [hf kill](hf_kill.md)	 - Kill one or more running containers
 * [hf logs](hf_logs.md)	 - Fetch the logs of a container

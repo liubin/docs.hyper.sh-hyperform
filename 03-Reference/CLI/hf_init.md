@@ -1,6 +1,6 @@
 ## hf init
 
-Create cloud resources for project
+Config for cloud and create cloud resources for project
 
 <!-- usage -->
 
@@ -9,9 +9,6 @@ Create cloud resources for project
 ```
 Usage:
   hf init
-
-Examples:
-/tmp/md-docs-generator init --cloud=aws --access-key=$AWS_ACCESS_KEY_ID --secret-key=$AWS_SECRET_ACCESS_KEY --private-key=~/.ssh/demo --public-key=~/.ssh/demo.pub --region=eu-central-1
 
 Flags:
       --access-key string    The AWS access key to use
@@ -37,15 +34,21 @@ Flags:
 
 You can use `--reset` or `--refresh` options if there have some troubles that leading fails.
 
-
-
-
-
-<!-- independent examples -->
-
-### Examples
+### Example
 
 ```
-/tmp/md-docs-generator init --cloud=aws --access-key=$AWS_ACCESS_KEY_ID --secret-key=$AWS_SECRET_ACCESS_KEY --private-key=~/.ssh/demo --public-key=~/.ssh/demo.pub --region=eu-central-1
+# interactive mode
+hf init
+
+# noninteractive mode
+hf init --cloud=aws --project=test --region=eu-central-1 \
+  --access-key=$AWS_ACCESS_KEY_ID --secret-key=$AWS_SECRET_ACCESS_KEY \
+  --private-key=~/.ssh/demo --public-key=~/.ssh/demo.pub
+  
+# create cloud resources for project
+hf init --deploy 
+
+#quiet mode, no prompt
+hf init --deploy --quiet
 ```
 
