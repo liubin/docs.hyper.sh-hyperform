@@ -11,8 +11,9 @@ Usage:
   hf destroy
 
 Flags:
-  -f, --force   Force the removal of a stack without confirmation
+  -f, --force   Force the removal of all stacks in this project
   -h, --help    help for destroy
+  -y, --yes     Confirm to destroy all cloud resources in this project
 
 ```
 <!-- description and examples -->

@@ -14,8 +14,8 @@ Aliases:
   rm, remove, down
 
 Flags:
-  -f, --force   Force the removal of a stack without confirmation
-  -h, --help    help for rm
+  -h, --help   help for rm
+  -y, --yes    Confirm to destroy all cloud resources in this stack
 
 ```
 <!-- description and examples -->
