@@ -4,7 +4,8 @@
 
 For now hyperform only supports AWS.
 
-Permissions needed:
+To let hyperform work correctly, your AWS IAM user should have these permissions:
+
 ```
 {
     "Version": "2012-10-17",
@@ -69,10 +70,40 @@ Permissions needed:
 
 
 
-## 2. SSH key-pair
+## 2. SSH keys
 
+Secure Shell (as SSH) is a cryptographic protocol which allows users to communicate with network services over an unsecured network. SSH keys provide a more secure way than using a password. While a password can eventually be cracked with a brute force attack, SSH keys are nearly impossible to decipher by brute force alone.
+
+If you don't have a SSH key ready, you can use `ssh-keygen` to generate one.
+
+```
+$ ssh-keygen -t rsa -b 4096
+```
+
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
+```
+Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+```
+
+At the prompt, type a secure passphrase or press enter for no passphrase.
+
+```
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+```
 
 ## 3. Terraform installed
+
 Please follow https://www.terraform.io/intro/getting-started/install.html
 
-To verify: run `terraform -v`
+After you have installed terraform, you can verify your installation.
+
+
+```
+$ terraform -v
+Terraform v0.11.8
+
+```
+
+If you get some output like this, congratulations, you have a terraform correctly installed.
