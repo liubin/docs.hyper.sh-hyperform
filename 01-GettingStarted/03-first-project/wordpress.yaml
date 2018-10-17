@@ -11,6 +11,7 @@ services:
          - ${ZONE}
        restart_policy:
          condition: on-failure
+         max_attempts: 3
      ports:
        - 3306:3306
      volumes:
@@ -33,9 +34,12 @@ services:
        size: t2.micro
        restart_policy:
          condition: on-failure
+         max_attempts: 3
+
        labels:
-         label-1: "a"
-         label-2: "b"
+         env: "production"
+         role: "front"
+         app: "wordpress"
      image: wordpress:latest
      ports:
        - "80:80"
@@ -63,8 +67,7 @@ volumes:
       iops: 100
       type: io1
     tags:
-      Tag1: abc
-      Tag2: def
+      App: wordpress
 
 
 aws_elb:
@@ -77,8 +80,9 @@ aws_elb:
         connection_draining_timeout: 500
 
         tags:
-          Tag1: abc
-          Tag2: def
+          Env: production
+          Role: front
+          App: wordpress
 
         access_logs:
           interval: "5"

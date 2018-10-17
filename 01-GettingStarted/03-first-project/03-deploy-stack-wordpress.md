@@ -23,12 +23,12 @@ Compose File:
 
 
 ## Do Deploy
+
 **Note: Environment variable 'ZONE' needs to be set for wordpress.yaml. Please replace the variables with your real values.**
-```
-[root@centos my-first-project]# export ZONE=$THE_AZ_YOU_CHOSE
-```
 
 ```
+[root@centos my-first-project]# export ZONE=$THE_AZ_YOU_CHOSE
+
 [root@centos my-first-project]# hf stack deploy -c wordpress.yaml
 ```
 
