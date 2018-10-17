@@ -2,8 +2,5 @@
   "name": "docs.hyperform.sh",
   "version": "1.0.0",
   "dependencies": {},
-  "devDependencies": {
-    "gitbook-plugin-collapsible-menu": "^1.0.3",
-    "gitbook-plugin-toc": "0.0.2"
-  }
+  "devDependencies": {}
 }

@@ -1,8 +1,11 @@
 #!/bin/bash
 set -e
 
-echo "> install plugins"
+echo "> install npm plugins"
 npm install
+
+echo "> install gitbook plugins"
+gitbook install
 
 echo "> ensure gitbook-cli was installed"
 gitbook --version 2>/dev/null || npm install gitbook-cli -g
