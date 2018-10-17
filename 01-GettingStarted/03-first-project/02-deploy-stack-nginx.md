@@ -26,24 +26,34 @@ EOF
 
 
 ## Verify
+
+Show stacks under the project.
+
 ```
-# list stacks
 [root@centos my-first-project]# hf stack ls
 PROJECT             NAME                SERVICES
 my-first-project    nginx               1
+```
 
-# list services
+Show services.
+
+```
 [root@centos my-first-project]# hf service ls
 STACK               NAME                REPLICAS/SPOT       IMAGE               DNSNAME             PORTS
-nginx               nginx               1/0                 nginx:alpine                            
+nginx               nginx               1/0                 nginx:alpine
+```
 
-# list containers
+Show all running containers.
+
+```
 [root@centos my-first-project]# hf ps
 STACK               SERVICE             ZONE                INSTANCE              PUBLIC IP           CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                  NAMES
 nginx               nginx               ap-southeast-1a     i-0c909acf905dbaebd   13.229.211.254      c76896ac9684        nginx:alpine        "nginx -g 'daemon of…"   About a minute ago   Up About a minute   0.0.0.0:8000->80/tcp   nginx.nginx.i-0c909acf905dbaebd
 ```
 
-Now you can access the nginx service via 'PUBLIC IP' (In this demo it's 13.229.211.254):
+
+When the nginx service is running, you can access the nginx service via `PUBLIC IP` (In this demo it's `13.229.211.254`):
+
 ```
 [root@centos my-first-project]# curl http://13.229.211.254:8000
 <!DOCTYPE html>

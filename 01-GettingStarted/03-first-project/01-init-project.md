@@ -19,6 +19,7 @@ Interactive mode:
 ```
 [root@centos my-first-project]# hf init
 Please enter the cloud provider[aws]:
+Please enter your project name[my-first-project]:
 Please enter your AWS access key id[]:********************
 Please enter your AWS secret access key[]:********************
 Please enter your region[]:us-east-2
@@ -32,6 +33,7 @@ Or Non-interactive mode:
 ```
 [root@centos my-first-project]# hf init \
                                   --cloud=aws \
+                                  --project=my-first-project \
                                   --access-key=$YOUR_AWS_ACCESS_KEY \
                                   --secret-key=$YOUR_AWS_SECRET_KEY \
                                   --private-key=$PATH_TO_YOUR_SSH_PRIVATE_KEY_FILE \
@@ -41,5 +43,5 @@ INFO[0000] Saved aws profile "default".
 ```
 **Note:** Please replace the variables with your actual values.
 
-To view the config, just run `cat .hyperform/aws`.
+To view the config, just run `hf config aws show`.
 
