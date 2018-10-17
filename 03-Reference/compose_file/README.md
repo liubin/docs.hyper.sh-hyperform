@@ -4,7 +4,7 @@ The Compose file is a [YAML](http://yaml.org/) file defining
 - [services](01-service.md)
 - [volumes](02-volume.md)
 - [secrets](03-secret.md)
-- [AWS ELBs](04-AWS_ELB)
+- [AWS ELBs](04-AWS_ELB.md)
 
 >**Tips**:
 >You can use either a `.yml` or `.yaml` extension for this file. They both work.
@@ -48,9 +48,11 @@ services:
        size: t2.micro
        restart_policy:
          condition: on-failure
+
        labels:
-         label-1: "a"
-         label-2: "b"
+         env: "production"
+         role: "front"
+         app: "wordpress"
      image: wordpress:latest
      ports:
        - "80:80"
@@ -78,8 +80,7 @@ volumes:
       iops: 100
       type: io1
     tags:
-      Tag1: abc
-      Tag2: def
+      App: wordpress
 
 
 aws_elb:
@@ -92,8 +93,9 @@ aws_elb:
         connection_draining_timeout: 500
 
         tags:
-          Tag1: abc
-          Tag2: def
+          Env: production
+          Role: front
+          App: wordpress
 
         access_logs:
           interval: "5"

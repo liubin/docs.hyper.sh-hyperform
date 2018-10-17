@@ -32,9 +32,6 @@ Specify configuration related to the deployment and running of services.
           size: t2.micro
           restart_policy:
             condition: on-failure
-          labels:
-            label-1: "a"
-            label-2: "b"
 
 Several sub-options are available:
 
@@ -86,7 +83,7 @@ services:
       preemptible: 2
 ```
 
-In the case that interruption happens, some preemptible replicas (or all) will receive a graceful period to exit (depending on the cloud, 2 minutes on AWS). When the replica is terminated, Hyper will automatically attempt to launch new replicas to to ensure your desired capacity. It will try to launch preemptible instance first, and if not working, fallback regular instances, and opportunistically will revert to preemptible instances when it is available again.
+In the case that interruption happens, some preemptible replicas (or all) will receive a graceful period to exit (depending on the cloud, 2 minutes on AWS). When the replica is terminated, Hyperform will automatically attempt to launch new replicas to to ensure your desired capacity. It will try to launch preemptible instance first, and if not working, fallback regular instances, and opportunistically will revert to preemptible instances when it is available again.
 
 #### public
 
@@ -323,7 +320,7 @@ ports:
 Grant access to secrets on a per-service basis using the per-service `secrets`
 configuration.
 
-> **Note**: The secret must be defined in the [top-level `secrets` configuration](03-secrets.md)
+> **Note**: The secret must be defined in the [top-level `secrets` configuration](03-secret.md)
 > of this compose file, or stack deployment fails.
 
 Hyperform support two types of secrets: `docker_registry` and normal secret.
