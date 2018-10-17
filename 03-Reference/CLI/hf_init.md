@@ -22,6 +22,7 @@ Flags:
       --profile string       [Optional] The name of the profile (default "default")
       --project string       [Optional] The name of the project
       --public-key string    The local path of the public key
+  -q, --quiet                use current config, no prompt
       --refresh              refresh the cloud resources first
       --region string        [Optional] The AWS region to use (default "us-east-1")
       --reset                re-create the terraform state file
