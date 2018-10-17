@@ -367,7 +367,7 @@ limit as an integer or soft/hard limits as a mapping.
 
 ## volumes
 
-Mount cloud volumes (or cloud disks) defined in the [top-level `volumes` configuration] (02-volume.md),
+Mount cloud volumes (or cloud disks) defined in the [top-level `volumes` configuration](02-volume.md),
 specified as sub-options to a service.
 
 This example shows a named volume (`mydata`) being used by the `web` service.

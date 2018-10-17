@@ -6,9 +6,8 @@ The Compose file is a [YAML](http://yaml.org/) file defining
 - [secrets](03-secret.md)
 - [AWS ELBs](04-AWS_ELB.md)
 
->**Tips**:
->You can use either a `.yml` or `.yaml` extension for this file. They both work.
->You can use environment variables in configuration values with a Bash-like `${VARIABLE}` syntax.
+>**Tip 1**: You can use either a `.yml` or `.yaml` extension for this file. They both work.
+>**Tip 2**: You can use environment variables in configuration values with a Bash-like `${VARIABLE}` syntax.
 
 ## Compose file structure and examples
 
