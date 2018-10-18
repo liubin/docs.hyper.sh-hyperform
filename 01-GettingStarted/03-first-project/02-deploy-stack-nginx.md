@@ -19,7 +19,7 @@ EOF
 ```
 
 
-## Do Deploy
+## Deploy
 ```
 [root@centos my-first-project]# hf stack deploy -c nginx.yaml
 ```
