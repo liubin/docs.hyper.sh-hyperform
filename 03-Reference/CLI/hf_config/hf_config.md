@@ -35,5 +35,5 @@ default region, and key pair that used to connect to remote Docker server.
 
 ### SEE ALSO
 
-* [hf config aws](hf_config_aws.md)	 - Manage the aws profile config file
+* [hf config aws](hf_config_aws/hf_config_aws.md)	 - Manage the aws profile config file
 
