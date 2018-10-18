@@ -14,6 +14,7 @@ Aliases:
   deploy, up
 
 Flags:
+      --auto-approve           Skip interactive approval of deploy
   -c, --compose-file strings   Path to a Compose file, or "-" to read from stdin
       --dry-run                Do compose file validation only
   -h, --help                   help for deploy
