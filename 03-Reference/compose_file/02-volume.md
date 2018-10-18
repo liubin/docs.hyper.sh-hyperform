@@ -1,4 +1,4 @@
-# Volume configuration reference
+# Volume Configuration Reference
 
 Manages Cloud volumes(or cloud disks).
 

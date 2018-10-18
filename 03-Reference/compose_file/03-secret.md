@@ -1,4 +1,4 @@
-# Secret configuration reference
+# Secret Configuration Reference
 
 Now hyperform support two kinds of secret: `docker_registry` and `normal` secret.
 

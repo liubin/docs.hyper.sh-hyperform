@@ -1,4 +1,4 @@
-# Service configuration reference
+# Service Configuration Reference
 
 
 A service definition contains configuration that is applied to each container started for that service.
@@ -89,7 +89,7 @@ In the case that interruption happens, some preemptible replicas (or all) will r
 
 #### public
 
-Configures whether the service is public accessible. If `true`, every container of the service will receive a public IPv4 address (shown in `hf ps`). By default `false`.
+Configures whether the service container(s) are public accessible. By default `false`.
 
 #### zone
 

@@ -1,4 +1,4 @@
-# AWS ELB configuration reference
+# AWS ELB Configuration Reference
 
 If your application will provide service to public, you can use AWS ELB to loadbalance your services.
 
