@@ -1,6 +1,6 @@
 # First Project
 
-To better understand hyperform, there are some examples including a [simple nginx](02-deploy-stack-nginx.md) service deployment, and a more complex [wordpress](03-deploy-stack-wordpress.md) service deployment.
+To better understand hyperform, here are some examples including a [simple nginx](02-deploy-stack-nginx.md) service deployment, and a more complex [wordpress](03-deploy-stack-wordpress.md) service deployment.
 
 But first, you must complete the [cloud account setup](01-init-project.md).
 
