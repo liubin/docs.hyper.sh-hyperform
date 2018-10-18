@@ -95,7 +95,7 @@ expect an integer, and they can only be specified once.
 
 ### SEE ALSO
 
-* [hf config](hf_config.md)	 - Manage cloud configs
+* [hf config](hf_config/hf_config.md)	 - Manage cloud configs
 * [hf cp](hf_cp.md)	 - Copy files/folders between a container and the local filesystem
 * [hf destroy](hf_destroy.md)	 - Destroy all cloud resources for project
 * [hf diff](hf_diff.md)	 - Inspect changes to files or directories on a container's filesystem
@@ -107,8 +107,8 @@ expect an integer, and they can only be specified once.
 * [hf port](hf_port.md)	 - List port mappings or a specific mapping for the container
 * [hf ps](hf_ps.md)	 - List containers
 * [hf restart](hf_restart.md)	 - Restart one or more containers
-* [hf service](hf_service.md)	 - Manage services
-* [hf stack](hf_stack.md)	 - Manage Docker stacks
+* [hf service](hf_service/hf_service.md)	 - Manage services
+* [hf stack](hf_stack/hf_stack.md)	 - Manage Docker stacks
 * [hf start](hf_start.md)	 - Start one or more stopped containers
 * [hf stats](hf_stats.md)	 - Display a live stream of container(s) resource usage statistics
 * [hf stop](hf_stop.md)	 - Stop one or more running containers

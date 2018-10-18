@@ -27,12 +27,6 @@ Flags:
 
 The `hf logs` command batch-retrieves logs present at the time of execution.
 
-> **Note**: this command is only functional for containers that are started with
-> the `json-file` or `journald` logging driver.
-
-For more information about selecting and configuring logging drivers, refer to
-[Configure logging drivers](https://docs.hf.com/config/containers/logging/configure/).
-
 The `hf logs --follow` command will continue streaming the new output from
 the container's `STDOUT` and `STDERR`.
 
