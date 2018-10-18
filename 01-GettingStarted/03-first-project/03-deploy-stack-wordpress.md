@@ -1,6 +1,6 @@
 # Deploy Stack 'wordpress'
 
-Now let's deploy a Wordpress+MySQL stack with ELB/ASG/Volume/Secrets, which is much more complicate than stack 'nginx'.
+Now let's deploy a Wordpress+MySQL stack with ELB/ASG/Volume/Secrets, which is a more complicated stack than the previous 'nginx' deployment.
 
 
 ## Prepare
@@ -22,7 +22,7 @@ Compose File:
 ```
 
 
-## Do Deploy
+## Deploy
 
 **Note: Environment variable 'ZONE' needs to be set for wordpress.yaml. Please replace the variables with your real values.**
 
