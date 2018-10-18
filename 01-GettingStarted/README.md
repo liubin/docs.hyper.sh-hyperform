@@ -4,4 +4,4 @@ Welcome to the getting started guide to Hyperform! This guide is the best place 
 
 For users already familiar with the basics of Hyperform, you can read the [CLI reference](../03-Reference/CLI) or [compose file reference](../03-Reference/compose_file) for more details.
 
-If you encounter some problems, the [FAQ](../04-FAQ) may be helpful.
+If you encounter problems, the [FAQ](../04-FAQ) may be helpful.
