@@ -58,7 +58,7 @@ $ echo 'pass1234' > wp_db_password.txt
 
 ## Use secrets in services
 
-Secrets usde in services' spec:
+Secrets will be mounted into cloud instances and then container running in the instance, and defined in services' spec:
 
 ```
 services:
