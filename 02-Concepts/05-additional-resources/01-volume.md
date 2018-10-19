@@ -3,7 +3,7 @@
 On-disk files in a container are ephemeral, when the container recreated, the data will lost, this is not suitable for some cases that need data to be persistent.
 
 Docker has a concept of
-[volumes](https://docs.docker.com/engine/admin/volumes/), though it is
+[volumes](https://docs.docker.com/storage/volumes/), though it is
 somewhat looser and less managed.  In Docker, a volume is simply a directory on
 disk or in another container. Docker now provides volume
 drivers and management sub-commands.
