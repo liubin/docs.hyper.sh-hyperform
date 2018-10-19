@@ -21,7 +21,7 @@ secrets:
     email: abc@abc.com
     password: abc123
   normal_secret:
-    file: ./test.txt
+    file: ./wp_db_password.txt
 ```
 
 If the secret is a normal secret, you need only use a `file` to refere to files that contains the secret content.

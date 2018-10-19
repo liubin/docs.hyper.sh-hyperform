@@ -17,6 +17,8 @@
     * [Volume](02-Concepts/05-additional-resources/01-volume.md)
     * [Secret](02-Concepts/05-additional-resources/02-secret.md)
     * [Elb](02-Concepts/05-additional-resources/03-elb.md)
+  - [Cloud Infrastructure](02-Concepts/06-cloud-infrastructure/README.md)
+    * [AWS](02-Concepts/06-cloud-infrastructure/AWS.md)
 - [Reference](03-Reference/README.md)
   - [CLI](03-Reference/CLI/README.md)
     - [hf config](03-Reference/CLI/hf_config/hf_config.md)
