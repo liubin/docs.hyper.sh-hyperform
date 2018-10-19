@@ -2,9 +2,9 @@
 
 ## 1. AWS account and credential
 
-Currently, hyperform only supports AWS.
+Currently, Hyperform only supports AWS.
 
-For hyperform to work correctly, your AWS IAM user should have these permissions:
+For Hyperform to work correctly, your AWS IAM user should have these permissions:
 
 ```
 {
@@ -95,15 +95,11 @@ Enter same passphrase again: [Type passphrase again]
 
 ## 3. Terraform installed
 
-Please follow https://www.terraform.io/intro/getting-started/install.html
+Please follow [this guide](https://www.terraform.io/intro/getting-started/install.html) to install Terraform.
 
-After you have installed terraform, you can verify your installation with this command.
-
-
+Then verify your installation:
 ```
 $ terraform -v
 Terraform v0.11.8
-
 ```
-
-If you receive this output, congratulations, you have a terraform correctly installed.
+If you receive this output, congratulations, you have a Terraform correctly installed.
