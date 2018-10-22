@@ -1,10 +1,11 @@
 # Concepts
 
 ## Overview
-Unlike other "infrastructure-as-code" tools that configure cloud VMs, Hyperform turns the IaaS cloud into a container-native workflow. 
+Unlike other "infrastructure-as-code" tools that configure cloud VMs, Hyperform turns the IaaS cloud into a container-native workflow.
 
 Hyperform deploy applications in the light of predefined [compose file](../03-Reference/compose_file).
 
+![](hyperform-architecture.jpg)
 
 ## Hyperform Objects
 

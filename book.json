@@ -1,5 +1,5 @@
 {
-    "plugins": ["collapsible-menu", "toc", "search"],
+    "plugins": ["folding-menu", "toc", "search"],
     "pluginsConfig": {
         "toc": {
             "addClass": true,
