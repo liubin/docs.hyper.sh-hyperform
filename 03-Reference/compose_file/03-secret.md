@@ -1,6 +1,6 @@
 # Secret Configuration Reference
 
-Now hyperform support two kinds of secret: `docker_registry` and `normal` secret.
+Now Hyperform support two kinds of secret: `docker_registry` and `normal` secret.
 
 If you want to use a private docker image, you can use a secret with `type` option setting to `docker_registry`.
 

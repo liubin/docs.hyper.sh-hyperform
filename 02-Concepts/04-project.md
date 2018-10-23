@@ -8,7 +8,7 @@ Project is a concept of Hyperform itself. One Project corresponds to a folder an
 
 `$ hf init`
 
-the init command will create a hidden folder `.hyperform' with the following files
+the init command will create a hidden folder `.hyperform` with the following files
   ```
   ├── aws
   ├── cache

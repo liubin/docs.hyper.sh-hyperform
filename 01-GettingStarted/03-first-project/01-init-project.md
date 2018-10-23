@@ -11,7 +11,7 @@
 - **Note:**
   - The following operations are all executed under the project directory.
   - Hyperform will take the basename of current directory as the project name.
-    - So if there are two directories in different paths but with the same basename, hyperform will recognize them as the same project.
+    - So if there are two directories in different paths but with the same basename, Hyperform will recognize them as the same project.
 
 
 ## Init project
